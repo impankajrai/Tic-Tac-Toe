@@ -1,0 +1,122 @@
+@import url("https://fonts.googleapis.com/css2?family=Cookie&display=swap");
+
+body {
+  background-image: linear-gradient(90deg, #00cade 0%, #a100ff 100%);
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+
+nav {
+  background-color: rgba(0, 0, 0, 0.6);
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.5);
+  width: 100vw;
+  height: 66px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.sound-icon {
+  font-size: 24px;
+  margin-right: 20px;
+  color: white;
+}
+.navitems {
+  font-size: 25px;
+  margin-left: 8px;
+  color: white;
+}
+
+#container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 90vh;
+  width: 95vw;
+  text-align: center;
+}
+#formDiv {
+  width: 240px;
+  height: 260px;
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 4px;
+  padding-top: 12px;
+  box-shadow: 5px 8px 18px -2px black;
+}
+form [type="text"] {
+  color: white;
+  background-color: black;
+  padding: 10px;
+  border-radius: 7px;
+  margin: 10px;
+  font-weight: bold;
+  border: none;
+}
+#form [type="button"] {
+  padding: 7px;
+  border-radius: 10px;
+  font-weight: bold;
+  width: 100px;
+  background-color: black;
+  color: white;
+  border-color: wheat;
+  margin-top: 15px;
+  margin-left: 27%;
+  cursor: pointer;
+  border: none;
+  outline: none;
+}
+#GameDiv {
+  display: none;
+}
+
+/* ---------------------------------------------- */
+
+.gameBtn {
+  font-family: "Permanent Marker", cursive;
+  font-size: 50px;
+  height: 100px;
+  width: 100px;
+
+  color: white;
+  background-color: black;
+  cursor: pointer;
+  border: 1px solid white;
+}
+#activePlayer {
+  margin-top: 400px;
+  font-size: 25px;
+  font-weight: bold;
+  color: black;
+}
+#heading {
+  height: 50px;
+  width: 100%;
+  border: 1px solid black;
+}
+#onWin {
+  display: none;
+}
+#gameOver {
+  display: none;
+}
+.Roundedbtn {
+  padding: 10px;
+  width: 150px;
+  background-color: black;
+  color: white;
+  font-weight: bold;
+  border-radius: 8px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  margin-top: 14px;
+}
+
+@media screen and (max-width: 480px) {
+  .navitems {
+    font-size: 22px;
+  }
+}

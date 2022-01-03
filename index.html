@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/resources/favicon-16x16.png" />
+    <!-- Link font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Tic-Tac-Toe Game</title>
+</head>
+
+<body onload="PlayerDetails()">
+    <nav id="nav">
+        <h4 class="navitems">Tic Tac Toe Game</h4>
+        
+    </nav>
+    <div id="container">
+        <div id="formDiv">
+            <form>
+                <label for="player1"><b>Player 1 :</b></label><br />
+                <input type="text" id="player1" placeholder="Enter Name" name="player1" /><br />
+                <label for="player2"><b>Player 2 :</b></label><br />
+                <input type="text" id="player2" name="player1" placeholder="Enter Name" /><br />
+                <input type="button" value="Start" class="Roundedbtn" onclick="FormSubmit()" />
+            </form>
+        </div>
+
+        <div id="GameDiv">
+            <h1 id="heading">Game Start</h1>
+            <table id="btnTable">
+                <tr>
+                    <td>
+                        <button onclick="ClickHandel(this)" name="1" class="gameBtn"></button>
+                    </td>
+                    <td>
+                        <button onclick="ClickHandel(this)" name="2" class="gameBtn"></button>
+                    </td>
+                    <td>
+                        <button onclick="ClickHandel(this)" name="3" class="gameBtn"></button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <button onclick="ClickHandel(this)" name="4" class="gameBtn"></button>
+                    </td>
+                    <td>
+                        <button onclick="ClickHandel(this)" name="5" class="gameBtn"></button>
+                    </td>
+                    <td>
+                        <button onclick="ClickHandel(this)" name="6" class="gameBtn"></button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <button onclick="ClickHandel(this)" name="7" class="gameBtn"></button>
+                    </td>
+                    <td>
+                        <button onclick="ClickHandel(this)" name="8" class="gameBtn"></button>
+                    </td>
+                    <td>
+                        <button onclick="ClickHandel(this)" name="9" class="gameBtn"></button>
+                    </td>
+                </tr>
+            </table>
+            <div id="activePlayerDiv" style="margin-top: 100px;">
+                <label id="activePlayer"></label>
+            </div>
+        </div>
+
+        <div id="gameOver">
+            <img height="250px" src="/resources/gameover.gif" />
+            <div id="gameOverHeading"></div>
+            <button class="Roundedbtn" onclick="playAgain()">Play Again</button>
+            <button class="Roundedbtn" onclick="changePlayer()">
+                Change Players
+            </button>
+        </div>
+        <div id="onWin">
+            <img height="250px" src="/resources/3AlV.gif" />
+            <h1 id="winMsg"></h1>
+            <button class="Roundedbtn" onclick="playAgain()">Play Again</button>
+            <button class="Roundedbtn" onclick="changePlayer()">
+                Change Players
+            </button>
+        </div>
+    </div>
+    <!-- link script -->
+    <script src="./index.js" />
+</body>
+
+</html>
